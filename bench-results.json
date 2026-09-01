@@ -1,0 +1,33 @@
+{
+  "note": "run under CPython; instruction rates are interpreter-bound, not silicon estimates",
+  "sumLoop": {
+    "program": "accumulate 0..19999",
+    "instructions": 80003,
+    "seconds": 0.103,
+    "instructionsPerSecond": 776728,
+    "result": 199990000,
+    "expected": 199990000,
+    "correct": true
+  },
+  "bubbleSort": {
+    "program": "bubble sort 120 words",
+    "instructions": 157419,
+    "seconds": 0.189,
+    "instructionsPerSecond": 832904,
+    "sortedCorrectly": true
+  },
+  "interrupts": {
+    "program": "systick storm, reload 25",
+    "instructions": 200000,
+    "seconds": 0.305,
+    "exceptionsTaken": 8000,
+    "handlerRuns": 7999,
+    "exceptionsPerSecond": 26229
+  },
+  "flagOracle": {
+    "combinationsChecked": 648,
+    "mismatches": 0,
+    "seconds": 0.001
+  }
+}
+
